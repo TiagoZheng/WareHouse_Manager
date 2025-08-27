@@ -41,8 +41,9 @@ const MainMenu = () => {
 
   return (
     <div className="flex">
-      <Drawer variant="permanent">{mainMenuList} </Drawer>
-      <div className="flex-1">Hello THere</div>
+      <Drawer variant="permanent" className="w-64">
+        {mainMenuList}
+      </Drawer>
     </div>
   );
 };

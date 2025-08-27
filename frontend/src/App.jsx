@@ -3,14 +3,15 @@ import { Route, Routes } from "react-router-dom";
 
 export default function App() {
   return (
-    <>
+    <div className="flex">
       <MainMenu />
+
       {/*  
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
       </Routes>
        */}
-    </>
+    </div>
   );
 }
