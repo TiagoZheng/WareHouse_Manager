@@ -7,11 +7,14 @@ import Box from "@mui/material/Box";
 
 const MainMenu = () => {
   // To toggle on and off the menu sidebar TODO button
+  
   const [open, setOpen] = React.useState(true);
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
 
+
+  {/* Items In the Menu */}
   const mainMenuList = (
     <div>
       <h1 className="font-bold text-center m-8">Main Menu</h1>
@@ -19,6 +22,10 @@ const MainMenu = () => {
         <List>
           <ListItemButton>
             <ListItemText primary="Dashboard"></ListItemText>
+          </ListItemButton>
+
+          <ListItemButton>
+            <ListItemText primary="Inventory"></ListItemText>
           </ListItemButton>
 
           <ListItemButton>
